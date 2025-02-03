@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Poppins", serif;
+}
+
+button {
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 1% 2%;
+    transition: 0.3s ease;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: medium;
+}
+button:hover {
+    background-color: rgb(46, 44, 44);
+}
+
+#featured hr {
+    width: 30px;
+    height: 3px;
+    margin: 0 50%;
+    background-color: #fb774b;
+}
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  height: 10vh;
+}
+
+.navbar-nav {
+margin-left: auto;
+}
+
+#navbar-nav > .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+#navbar-nav > .nav-link:hover,
+#navbar-nav > .nav-link:active {
+    color: coral;
+}
+
+#navbar-nav > a > ion-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#navbar-nav > a > ion-icon:hover,
+#navbar-nav > a > ion-icon:active{
+    color: coral;
+}
+
+
+.home-section {
+    height: 100vh;
+    width: 100%;
+    background: url(img/back.jpg);
+    background-size: cover;
+    background-position: top 6% center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-container span {
+    color: coral;
+}
+.home-container > h1 {
+    font-weight: 700 ;
+}
+
+.one > img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    position: relative;
+}
+ .one > .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+ }
+
+ .one:hover > .details {
+    cursor: pointer;
+    background-color: rgba(254, 178, 178, 0.7);
+ }
+
+.details > button {
+    border-bottom: #2a2a2a 2px solid;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+ }
+
+ .details > button:hover {
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+ .one:nth-child(1) .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+ }
+ .one:nth-child(2) .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .one:nth-child(3) .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+ }
+
+ .product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+ }
+
+ .product img {
+    transition: 0.3s all;
+ }
+ .product:hover img {
+    opacity: 0.7;
+ }
+
+ .product .buy-btn {
+    background: #fb774b;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+ }
+
+ .product:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+ }
+
+ .star {
+    padding: 3% 0;
+ }
+
+ .star ion-icon {
+    font-size: 0.8rem;
+    color: goldenrod;
+ }
+
+ #banner {
+    height: 100vh;
+    width: 100%;
+    background: url(img/banner/2.jpg);
+    background-size: cover;
+    background-position: top 7% center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner h4,
+.footer-list,
+.footer-one {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+#banner h1 {
+    color: white;
+}
+
+#banner button {
+    background-color: #fb774b;
+}
+
+.footer {
+    background: rgb(11, 10, 10);
+    color: white;
+}
+
+
+/* shop page  */
+
+/* cart page  */
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead td{
+    font-weight: 700;
+    background: #fb774b;
+    color: white;
+    border: none;
+    padding: 1%;
+    text-align: center;
+}
+
+#cart-container table td {
+    border: 1px solid #fb774b;
+    text-align: center;
+}
+
+td a > ion-icon {
+    color: #8d8c89;
+    font-size: larger;
+}
+
+.cuupon h5 {
+    background: #fb774b;
+    color: white;
+    width: 100%;
+    padding: 1%;
+}
+
+.cuupon > div {
+    border: 1px solid #fb774b;
+}
+
+.total-btn {
+    margin: 0 1px 2px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Sprdouct  */
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.sproduct select {
+    display: block;
+    padding: 2% 3%;
+}
+
+.sproduct input {
+    width: 10%;
+    height: 5%;
+    padding-left: 2%;
+    font-size: 16px;
+    margin-right: 2%
+     ;
+}
+
+.sproduct input:focus {
+outline: none;
+}   
+
+.buy-btn {
+    background: #fb774b;
+    transition: 0.3 ease;
+    opacity: 1;
+}
